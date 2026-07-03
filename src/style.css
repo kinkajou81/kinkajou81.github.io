@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    position: relative;
+    background: #070b14;
+}
+p {
+    color: #e6ecf9
+}
+#main_title {
+    position: absolute;
+    top: 22.5vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+    font-family: system-ui;
+    font-size: max(1rem, min(14.4vh, 10.8vw));
+}
+.games_buttons {
+    width: max(1rem, min(23vw, 30.7vh));
+    height: max(1rem, min(15.7vh, 11.8vw));
+    position: absolute;
+    background: #3d5ed3;
+    transform: translate(0%, 0%);
+    border-radius: max(0.5rem, 2vw)/max(0.9rem, 3.6vh);
+}
+.games_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -53.5%);
+    font-size: max(1rem, min(3.88vw, 5.8vh));
+    text-align: center;
+    color: #c3cee7;
+    white-space: nowrap;
+    font-family: system-ui;
+}
+#palabraita_text1 {
+    display: table-cell;
+    vertical-align: top;
+    top: 16.6vh;
+    left: 50vw;
+    font-size: max(1rem, 6.07vw);
+    line-height: 8.84vh;
+    font-family: system-ui;
+    font-weight: bold;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    white-space: nowrap;
+}
+#palabraita_text2 {
+    top: 30.3vh;
+    left: 50vw;
+    font-size: max(1rem, 6.07vw);
+    line-height: 11.5vh;
+    font-family: system-ui;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    white-space: break-spaces;
+}
+#main_screen {
+    will-change: transform, opacity;
+}
+#palabraita_play {
+    bottom: 15vh;
+    left: 50vw;
+    background: black;
+    width: max(1rem, min(23vw, 30.7vh));
+    height: max(1rem, min(15.3vw, ));
+}
+#palabraita_text_play {
+    top: 50%;
+    left: 50%;
+    font-size: max(1rem, 6.07vw);
+    font-family: system-ui;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+}
