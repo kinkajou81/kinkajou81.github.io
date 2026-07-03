@@ -8,35 +8,46 @@ html, body {
 }
 body {
     position: relative;
-    background: #070b14;
+    background: #1b6bb5;
+    background: -webkit-linear-gradient(349deg,rgba(27, 107, 181, 1) 0%, rgba(255, 230, 230, 1) 100%);
+    background: -moz-linear-gradient(349deg,rgba(27, 107, 181, 1) 0%, rgba(255, 230, 230, 1) 100%);
+    background: linear-gradient(349deg,rgba(27, 107, 181, 1) 0%, rgba(255, 230, 230, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr="#1B6BB5",
+    endColorstr="#FFE6E6",
+    GradientType=0
+);
 }
 p {
-    color: #e6ecf9
+    color: #000108
 }
 #main_title {
     position: absolute;
-    top: 22.5vh;
+    top: 21.6vh;
     left: 50vw;
     transform: translate(-50%, -50%);
     text-align: center;
     white-space: nowrap;
     font-family: system-ui;
-    font-size: max(1rem, min(14.4vh, 10.8vw));
+    font-size: max(1rem, 10.8vw);
 }
 .games_buttons {
-    width: max(1rem, min(23vw, 30.7vh));
-    height: max(1rem, min(15.7vh, 11.8vw));
+    width: 26.4vw;
+    height: min(20.4vh, 11.48vw);
     position: absolute;
-    background: #3d5ed3;
+    background: #4883be;
     transform: translate(0%, 0%);
-    border-radius: max(0.5rem, 2vw)/max(0.9rem, 3.6vh);
+    border-radius: min(5vw, 6.67vh);
+    outline-width: 1.2px;
+    outline-style: solid;
+    outline-color: #307ac0;
 }
 .games_text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -53.5%);
-    font-size: max(1rem, min(3.88vw, 5.8vh));
+    font-size: 4.82vw;
     text-align: center;
     color: #c3cee7;
     white-space: nowrap;
@@ -45,45 +56,50 @@ p {
 #palabraita_text1 {
     display: table-cell;
     vertical-align: top;
-    top: 16.6vh;
+    top: calc(16.6vh + (4.91vh + 8.73vw) / 4.6);
     left: 50vw;
-    font-size: max(1rem, 6.07vw);
-    line-height: 8.84vh;
+    font-size: min(max(1rem, calc(4.91vh + 8.73vw)), 11.2vw);
     font-family: system-ui;
     font-weight: bold;
     position: absolute;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     text-align: center;
     white-space: nowrap;
 }
 #palabraita_text2 {
-    top: 30.3vh;
+    top: calc(30.3vh + 0.3 * min(min(calc(5.75vw + 3.23vh), 9.26vw), 8vh));
     left: 50vw;
-    font-size: max(1rem, 6.07vw);
-    line-height: 11.5vh;
+    font-size: min(min(max(1rem, calc(2.03vh + 5.4vw)), 8.2vw), 11vh);
+    line-height: min(min(calc(5.75vw + 3.23vh), 12vw), 9.2vh);
     font-family: system-ui;
     position: absolute;
     transform: translate(-50%, 0%);
     text-align: center;
-    white-space: break-spaces;
 }
 #main_screen {
     will-change: transform, opacity;
 }
 #palabraita_play {
-    bottom: 15vh;
+    top: 66vh;
     left: 50vw;
-    background: black;
-    width: max(1rem, min(23vw, 30.7vh));
-    height: max(1rem, min(15.3vw, ));
+    position: absolute;
+    background: #6191c3;
+    width: 23vh;
+    height: 9.26vh;
+    transform: translate(-50%, 0%);
+    border-radius: min(5vw, 6.67vh);
+    outline-width: 1.2px;
+    outline-style: solid;
+    outline-color: #307ac0;
 }
 #palabraita_text_play {
     top: 50%;
     left: 50%;
-    font-size: max(1rem, 6.07vw);
+    font-size: 6.8vh;
     font-family: system-ui;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -53.5%);
     text-align: center;
     white-space: nowrap;
+    color: #c3cee7;
 }
