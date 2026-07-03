@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("palabraita").style.display = "none";
+    document.getElementById("palabraita_game").style.display = "none";
 });
 
 function palabraita() {
@@ -8,7 +9,6 @@ function palabraita() {
 }
 
 function palabraita_play() {
-    document.getElementById("main_screen").style.display = "none";
     document.getElementById("palabraita").style.display = "none";
-    document.getElementById("palabraita_play").style.display = "block";
+    document.getElementById("palabraita_game").style.display = "block";
 }
